@@ -51,7 +51,7 @@ telnet 1.1.1.1 443
 
 Write some data on the console and try to transfer it
 
-![](images/Telnet Test.png)
+![](images/Telnet%20Test.png)
 
 The connection will be terminated after a couple of requests.
 
