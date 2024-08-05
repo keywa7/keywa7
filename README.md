@@ -201,7 +201,7 @@ So feel free to configure any browser to use keywa7's agent as a SOCKS5 proxy an
    * Windows: GOOS=windows
 3. Run build command: **go build**
 
-_Note: already **compiled** and **ready-to-use** versions of both components, for **Linux** and **Windows** OS-es, are available in **Releases** section_
+_Note: already **compiled** and **ready-to-use** versions of both components, for **Linux** and **Windows** OS-es, are available in [Releases](https://github.com/keywa7/keywa7/releases) section_
 
 ### Correct Architecture
 Firewalls should employ approach where connection is not established between user and server until legitimacy of traffic is ensured.
