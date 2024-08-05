@@ -209,7 +209,7 @@ Firewalls should employ approach where connection is not established between use
 ### Hot To Protect Your Environment?
 Simply run the vulnerability check, provided above.
 
-If you're vulnerable, just **DO NOT** use Application Based (L7) Rules. Otherwise, consider that you do not have a firewall at all
+If you're vulnerable, just **DO NOT** use Application Based (L7) Rules. Otherwise, consider that you do not have a firewall at all.
 
 ### Disclosure
 Cisco, the company responsible for the Cisco FTD (Firewall Threat Defense) software is aware of the vulnerability but has not taken any action to remediate the issue.
