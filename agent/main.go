@@ -29,7 +29,7 @@ var OPTIONS struct {
 	RPORT int    `long:"rport" description:"Remote port to forward connections to" required:"true"`
 
 	INTERVAL int `long:"interval" description:"Time to wait before initiating a new connection for a session [milliseconds] [default: 100] [WARNING: LOW VALUE WILL CAUSE OVERFLOW OF CONNECTIONS ON THE HOST]"`
-	PAD      int `long:"pad" description:"Bytes to transfer per packet. [default: 3500] [WARNING: HIGH VALUE WILL TRIGGER CISCO TO BLOCK THE PACKET]"`
+	PAD      int `long:"pad" description:"Bytes to transfer per packet. [default (works on Cisco FTD): 3500] [WARNING: HIGH VALUE WILL TRIGGER FIREWALLS TO BLOCK THE PACKET]"`
 }
 
 func validateArgs() bool {

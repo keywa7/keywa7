@@ -30,7 +30,7 @@ var OPTIONS struct {
 
 	LHOST string `long:"lhost" description:"Local address to listen for connections" required:"true"`
 	LPORT int    `long:"lport" description:"Local port to listen for connections" required:"true"`
-	PAD   int    `long:"pad" description:"Bytes to transfer per packet. [default: 3500] [WARNING: HIGH VALUE WILL TRIGGER CISCO TO BLOCK THE PACKET]"`
+	PAD   int    `long:"pad" description:"Bytes to transfer per packet. [default (works on Cisco FTD): 3500] [WARNING: HIGH VALUE WILL TRIGGER FIREWALLS TO BLOCK THE PACKET]"`
 }
 
 func validateArgs() bool {
