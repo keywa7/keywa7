@@ -38,28 +38,21 @@ The quantity of the packets and the size of the data is limited to the minimal a
 
 To test if your environment is vulnerable to keywa7, just run a simple telnet test.
 
-Set up a simple listener on the remote host, where direct access is nor permitted by the firewall.
-```
-./ncat -lvnp 443
-```
-###### _Note: port 443 is taken as an example, any arbitrary port can be used, both, for checking the vulnerability and using the exploit as well._
-
-And try to connect to it from the restricted environment:
+Try to connect to any remote address:port, where direct access is nor permitted by the firewall.
 ```
 telnet 1.1.1.1 443
 ```
 
-Write some data on the console and try to transfer it
+Write some data on the console and try to transfer it from the restricted environment.
 
-![](images/Telnet%20Test.png)
+Notice that the packets are allowed and the data goes trhough the firewall.
 
 The connection will be terminated after a couple of requests.
 
 ##### If you're not vulnerable, telnet test should fail so:
-```
-telnet 1.1.1.1 443
-```
 ![](images/Telnet%20Test%20Fail.png)
+
+###### _Note: port 443 is taken as an example, any arbitrary port can be used, both, for checking the vulnerability and using the exploit as well._
 
 ### The Exploit:
 Since the application filtering engine, at the beginning of the connection, is forced to allow some packets go through, we can transfer **ANY** (but limited in size) data to **ANY** destination.
